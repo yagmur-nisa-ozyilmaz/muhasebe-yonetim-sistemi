@@ -1,0 +1,84 @@
+Sunum Başlığı: Muhasebe Yönetim Sistemi
+1. Giriş ve Projenin Amacı
+Hoş Geldiniz ve Tanıtım:
+
+Hoş geldiniz, ben Yağmur Nisa Özyılmaz. Bugün size Muhasebe Yönetim Sistemi projemi tanıtacağım.
+Projenin Amacı:
+
+Bu projenin amacı, kullanıcıların finansal durumlarını daha iyi yönetmelerine yardımcı olacak bir gelir-gider takip sistemi oluşturmaktır.
+Kullanıcılar bu sistem sayesinde gelirlerini ve giderlerini kolayca kaydedebilir, güncelleyebilir, silebilir ve görüntüleyebilirler.
+Sistem, finansal planlama ve bütçeleme süreçlerini daha şeffaf ve erişilebilir hale getirmeyi hedeflemektedir.
+2. Kullanılan Teknolojiler
+Python:
+
+Projemin ana programlama dili. Python'un esnek ve güçlü kütüphane desteği, projeyi hızlı ve verimli bir şekilde geliştirmeme olanak tanıdı.
+SQLite:
+
+Hafif ve kurulumu kolay bir veritabanı yönetim sistemi. Gelir ve gider verilerini güvenli bir şekilde saklamak için kullanıyorum.
+csv:
+
+Kullanıcıların verilerini CSV formatında dışa aktarmalarını sağlayan kütüphane.
+hashlib:
+
+Kullanıcı şifrelerini güvenli bir şekilde saklamak için kullanılan şifreleme kütüphanesi.
+os ve getpass:
+
+İşletim sistemi ile etkileşim ve güvenli şifre girişi sağlamak için kullanılıyor.
+termcolor:
+
+Konsolda renkli çıktılar oluşturarak kullanıcı deneyimini iyileştiren kütüphane.
+3. Fonksiyonların Tanıtımı ve Örnekler
+Kullanıcı Yönetimi:
+
+kayit_ol(): Yeni bir kullanıcı kaydı oluşturma.
+
+Örnek: Kullanıcı kayıt olurken kullanıcı adı, şifre ve e-posta bilgilerini girer. Şifre güvenli bir şekilde hashlenir ve veritabanında saklanır.
+giris_yap(): Mevcut bir kullanıcı ile giriş yapma.
+
+Örnek: Kullanıcı kullanıcı adı ve şifresi ile giriş yapar, sistem şifreyi kontrol eder ve kullanıcıya özel bir oturum açar.
+Gelir-Gider Yönetimi:
+
+gelir_ekle(): Yeni bir gelir kaydı ekleme.
+
+Örnek: Kullanıcı gelir eklerken gelir miktarını, tarihini ve kaynağını girer. Bu bilgi veritabanında saklanır ve toplam gelir hesaplanır.
+gider_ekle(): Yeni bir gider kaydı ekleme.
+
+Örnek: Kullanıcı gider eklerken gider miktarını, tarihini ve harcama kategorisini girer. Bu bilgi veritabanında saklanır ve toplam gider hesaplanır.
+veri_guncelle(): Mevcut bir gelir veya gider kaydını güncelleme.
+
+Örnek: Kullanıcı yanlış girilen bir gider kaydını düzenleyebilir, miktarı veya tarihi güncelleyebilir.
+veri_sil(): Mevcut bir gelir veya gider kaydını silme.
+
+Örnek: Kullanıcı artık gereksiz olan bir gelir veya gider kaydını sistemden tamamen kaldırabilir.
+Fatura Yönetimi:
+
+fatura_goruntule(): Belirli bir şirkete ait faturaları görüntüleme.
+
+Örnek: Kullanıcı bir şirkete ait tüm faturaları görüntüleyebilir ve bu faturaların detaylarını inceleyebilir.
+kullanici_csv_ciktisi_al(): Kullanıcıya ait faturaları CSV formatında dışa aktarma.
+
+Örnek: Kullanıcı, tüm gelir ve gider verilerini CSV formatında dışa aktararak bu verileri başka platformlarda kullanabilir veya yedekleyebilir.
+4. Canlı Demo
+Kullanıcı Girişi:
+
+Sisteme giriş yaparak nasıl kullanıcı olunduğunu ve mevcut kullanıcıların nasıl oturum açtığını gösterin.
+Gelir-Gider Ekleme:
+
+Yeni bir gelir ve gider kaydı ekleyerek bu süreci adım adım gösterin.
+Veri Güncelleme ve Silme:
+
+Mevcut bir kaydı nasıl güncellediğinizi ve gereksiz bir kaydı nasıl sildiğinizi gösterin.
+Fatura Görüntüleme ve CSV Çıktısı Alma:
+
+Belirli bir şirkete ait faturaları görüntüleyin ve bu verileri CSV formatında dışa aktarın.
+5. Sonuç ve Gelecek Planları
+Sonuç:
+
+Bu proje, kullanıcıların finansal durumlarını etkili bir şekilde yönetmelerine yardımcı olacak kapsamlı bir gelir-gider yönetim sistemi sunar.
+Kullanıcı dostu arayüzü ve fonksiyonel özellikleri ile finansal yönetimi daha kolay ve erişilebilir hale getirir.
+Gelecek Planları:
+
+Projeye yeni özellikler eklemeyi planlıyorum, örneğin:
+Mobil uygulama entegrasyonu.
+Gelir ve gider analizleri için grafikler ve raporlar.
+Otomatik veri yedekleme sistemi.
